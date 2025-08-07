@@ -7,7 +7,8 @@
 	
 	"scripts": {
 		"start": "tsx ./src/index.ts",
-		"dev": "node --inspect --loader tsx ./src/index.ts"
+		"dev": "node --import tsx ./src/index.ts"
+
 	},
 
 	"dependencies": {
