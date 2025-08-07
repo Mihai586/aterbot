@@ -26,6 +26,17 @@ const createBot = (): void => {
 		username: CONFIG.client.username
 	} as const);
 
+	bot.on("spawn", () => {
+		// Wait 1 second before login
+		setTimeout(() => {
+			bot.chat("/login mihai2018A");
+		}, 1000); // 1 second
+
+		// Wait 2 seconds before saying hello
+		setTimeout(() => {
+			bot.chat("hahha i hacked afkbot2 ezz");
+		}, 2000); // 2 seconds
+	});
 
 	bot.once('error', error => {
 		console.error(`AFKBot got an error: ${error}`);
