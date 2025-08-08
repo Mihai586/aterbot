@@ -1,4 +1,5 @@
 import HTTP from 'node:http';
+import { notifyDiscord } from "./notifyDiscord.ts";
 
 const PORT = process.PORT || 5500;
 const server = HTTP.createServer((request, response) => {
@@ -14,4 +15,5 @@ const server = HTTP.createServer((request, response) => {
 
 export default (): void => {
 	server.listen(PORT, () => console.log("Server for UptimeRobot is ready!"));
+	notifyDiscord();
 };
