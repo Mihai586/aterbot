@@ -5,7 +5,7 @@ export async function notifyDiscord() {
     const message = `🟩🟩🟩🟩🟩🟩🟩🟩🟩
 ------------------------------
 server opened
-Ping: @Minecraft 
+Ping: @Minecraft
 ------------------------------
 🟩🟩🟩🟩🟩🟩🟩🟩🟩`;
 
