@@ -5,7 +5,7 @@ export async function notifyDiscord() {
     const message = `🟩🟩🟩🟩🟩🟩🟩🟩🟩
 ------------------------------
 server opened
-Ping: @Minecraft
+Ping: <@&1401138311111905340>
 ------------------------------
 🟩🟩🟩🟩🟩🟩🟩🟩🟩`;
 
@@ -22,3 +22,5 @@ Ping: @Minecraft
         console.error("❌ Failed to send Discord notification:", error);
     }
 }
+
+
